@@ -55,3 +55,24 @@ FOREIGN KEY(Id_fornecedor) REFERENCES Fornecedor (Id_fornecedor)
 -- FOREIGN KEY(Id_cliente) REFERENCES Cliente (Id_cliente)
 -- );
 
+-- Desafios
+
+-- Questão 1
+-- Categoria --- Possui --- Produto
+-- (1,n) (1,1)
+
+-- Questão 2
+-- Funcionario --- Registra --- Pedidos
+-- (1,n) (1,1)
+
+-- Questão 3
+-- Fornecedor --- Comercializa --- Produtos
+-- (1,n) (1,n)
+
+-- Questão 4
+-- Cliente --- Reserva --- Mesa
+-- (0,n) (1,1)
+
+-- Questão 5
+-- Pedido --- Possui --- Itens
+-- (1,n) (1,1)
