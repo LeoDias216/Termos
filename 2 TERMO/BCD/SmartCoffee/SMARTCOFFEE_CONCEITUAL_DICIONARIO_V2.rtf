@@ -1,0 +1,336 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Rela\f1\'e7\'e3o: \cf2\b0 Abastece\cf1\b 
+\par \cf0\b0\f0 Fornecedor abastece Estoque (0,n) (1,n)
+\par 
+\par \cf1\b 002 - Rela\f1\'e7\'e3o: \cf2\b0 Atende\cf1\b 
+\par \cf0\b0\f0 O funcionario registra varios pedidos; Um pedido \f1\'e9 registrado por um \'fanico funcion\'e1rio
+\par \f0 
+\par \cf1\b 003 - Atributo: \cf2\b0 Ativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 004 - Atributo: \cf2\b0 Ativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 005 - Atributo: \cf2\b0 Ativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 006 - Atributo: \cf2\b0 Ativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 007 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 varchar(14) not null
+\par 
+\par \cf1\b 008 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 varchar(14) not null
+\par 
+\par \cf1\b 009 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 varchar(14) not null
+\par 
+\par \cf1\b 010 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 varchar(14) not null
+\par 
+\par \cf1\b 011 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 char(14) not null
+\par 
+\par \cf1\b 012 - Atributo: \cf2\b0 Cargo\cf1\b 
+\par \cf0\b0 varchar(20) not null
+\par 
+\par \cf1\b 013 - Atributo: \cf2\b0 Cartao\cf1\b 
+\par \cf0\b0 enum("Debito", "Credito", "Pix")
+\par 
+\par \cf1\b 014 - Entidade: \cf2\b0 Categoria\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Categoria armazena os dados das categorias de produtos
+\par Atributos: Id_categoria, Nome, Produtos, Quantidade, Preco, Validade
+\par \f0 
+\par \cf1\b 015 - Atributo: \cf2\b0 Categoria\cf1\b 
+\par \cf0\b0 varchar(30) not null
+\par 
+\par \cf1\b 016 - Entidade: \cf2\b0 Clientes\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Clientes armazena os dados dos clientes
+\par Atributos: Id_cliente, Nome, Numero, CPF, Endereco, Data_nasc, email, Status \f0 
+\par \cf1\b 017 - Atributo: \cf2\b0 Data\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 018 - Atributo: \cf2\b0 Data\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 019 - Atributo: \cf2\b0 Data_admissao\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 020 - Atributo: \cf2\b0 Data_hora_saida\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 021 - Atributo: \cf2\b0 Data_nasc\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 022 - Atributo: \cf2\b0 Data_nasc\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 023 - Atributo: \cf2\b0 Data_ultima_atualizacao\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 024 - Entidade: \cf2\b0 Delivery\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Delivery armazena os dados dos delivery realizados
+\par Atributos: Id_delivery, Nome, CPF, Produto, Quantidade, Preco, Data, Status
+\par \f0 
+\par \cf1\b 025 - Atributo: \cf2\b0 Delivery\cf1\b 
+\par \cf0\b0 enum("Presencial", "Delivery") default "Presencial"
+\par 
+\par \cf1\b 026 - Atributo: \cf2\b0 Descricao\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 027 - Atributo: \cf2\b0 Dinheiro\cf1\b 
+\par \cf0\b0 enum("Debito", "Credito", "Pix")
+\par 
+\par \cf1\b 028 - Atributo: \cf2\b0 Empresa\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 029 - Atributo: \cf2\b0 Endereco\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 030 - Atributo: \cf2\b0 Endereco\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 031 - Atributo: \cf2\b0 Endereco\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 032 - Rela\f1\'e7\'e3o: \cf2\b0 Entrega\cf1\b 
+\par \cf0\b0\f0 Um funcion\f1\'e1rio (entregador) pode levar v\'e1rios deliverys
+\par \f0 
+\par \cf1\b 033 - Entidade: \cf2\b0 Estoque\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade estoque armazena os dados dos estoque atual
+\par Atributos: Id_estoque, Produto, Hist_entrada_saida, Fornecedor, Tipo, Quantidade
+\par \f0 
+\par \cf1\b 034 - Entidade associativa: \cf2\b0 Ficha_t\f1\'e9cnica\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 035 - Atributo: \cf2\b0 Forma_pag\cf1\b 
+\par \cf0\b0 enum("Debito", "Credito", "Pix")
+\par 
+\par \cf1\b 036 - Entidade: \cf2\b0 Fornecedor\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Fornecedor armazena os dados dos fornecedores
+\par Atributos: Id_fornecedor, Empresa, Produto, Quantidade, Preco, Localizacao
+\par \f0 
+\par \cf1\b 037 - Atributo: \cf2\b0 Fornecedor\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 038 - Entidade: \cf2\b0 Funcionarios\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Funcionarios armazena os dados dos funcionarios disponiveis
+\par Atributos: Id_funcionario, Salario, Nome, Data_nasc, Numero, Endereco, Cargo \f0 
+\par \cf1\b 039 - Rela\f1\'e7\'e3o: \cf2\b0 Gera\cf1\b 
+\par \cf0\b0\f0 Nem todo pedido vai para entrega, mas todo delivery nasceu obrigatoriamente de um pedido
+\par 
+\par \cf1\b 040 - Atributo: \cf2\b0 Hist_compras\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 041 - Atributo: \cf2\b0 Hist_entrada_saida\cf1\b 
+\par \cf0\b0 timestamp default current_timestamp
+\par 
+\par \cf1\b 042 - Atributo: \cf2\b0 Id_categoria\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 043 - Atributo: \cf2\b0 Id_cliente\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 044 - Atributo: \cf2\b0 Id_delivery\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 045 - Atributo: \cf2\b0 Id_fornecedor\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 046 - Atributo: \cf2\b0 Id_funcionario\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 047 - Atributo: \cf2\b0 Id_insumo\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 048 - Atributo: \cf2\b0 Id_pagamento\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 049 - Atributo: \cf2\b0 Id_pedido\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 050 - Atributo: \cf2\b0 Id_produto\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 051 - Atributo: \cf2\b0 Id_programa_fidelidade\cf1\b 
+\par \cf0\b0 int auto_increment primary key
+\par 
+\par \cf1\b 052 - Atributo: \cf2\b0 Inativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 053 - Atributo: \cf2\b0 Inativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 054 - Atributo: \cf2\b0 Inativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 055 - Atributo: \cf2\b0 Inativo\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 056 - Entidade associativa: \cf2\b0 Item_produto\cf1\b 
+\par \cf0\b0 Conecta Pedidos e Produtos com o Item_produto
+\par A entidade possui quantidade e preco_historico como atributos
+\par 
+\par \cf1\b 057 - Atributo: \cf2\b0 Localizacao\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 058 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60)
+\par 
+\par \cf1\b 059 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 060 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 061 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 062 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 063 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 064 - Atributo: \cf2\b0 Nome_produto\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 065 - Atributo: \cf2\b0 Nome_produto\cf1\b 
+\par \cf0\b0 varchar(60) not null
+\par 
+\par \cf1\b 066 - Atributo: \cf2\b0 Numero\cf1\b 
+\par \cf0\b0 varchar(12) not null
+\par 
+\par \cf1\b 067 - Entidade: \cf2\b0 Pagamento\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Pagamento armazena os dados dos pagamentos realizados
+\par Atributos: Id_pagamento, Valor, CPF, Data, Status, Forma_pag \f0 
+\par \cf1\b 068 - Rela\f1\'e7\'e3o: \cf2\b0 Participa\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o 1 para 1. Cada cliente tem uma \'fanica conta de pontos 
+\par \f0 
+\par \cf1\b 069 - Entidade: \cf2\b0 Pedidos\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Pedidos armazena os dados dos pedidos feitos
+\par Atributos: Id_pedido, Nome, Produtos, Preco, Data, Quantidade, Status \f0 
+\par \cf1\b 070 - Rela\f1\'e7\'e3o: \cf2\b0 Pertence\cf1\b 
+\par \cf0\b0\f0 Produtos pertence Categoria (1,1) (0,n)
+\par 
+\par \cf1\b 071 - Atributo: \cf2\b0 Pix\cf1\b 
+\par \cf0\b0 enum("Debito", "Credito", "Pix")
+\par 
+\par \cf1\b 072 - Rela\f1\'e7\'e3o: \cf2\b0 Possui\cf1\b 
+\par \cf0\b0\f0 Todo pedido que \f1\'e9 fechado gera um unico registro de pagamento
+\par \f0 
+\par \cf1\b 073 - Atributo: \cf2\b0 Preco\cf1\b 
+\par \cf0\b0 decimal(4,2) not null
+\par 
+\par \cf1\b 074 - Atributo: \cf2\b0 Preco\cf1\b 
+\par \cf0\b0 decimal(5,2) not null
+\par 
+\par \cf1\b 075 - Atributo: \cf2\b0 Preco\cf1\b 
+\par \cf0\b0 decimal(3,2) not null
+\par 
+\par \cf1\b 076 - Atributo: \cf2\b0 Preco\cf1\b 
+\par \cf0\b0 decimal(5,2) not null
+\par 
+\par \cf1\b 077 - Atributo: \cf2\b0 Presencial\cf1\b 
+\par \cf0\b0 enum("Presencial", "Delivery") default "Presencial"
+\par 
+\par \cf1\b 078 - Atributo: \cf2\b0 Produto\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 079 - Atributo: \cf2\b0 Produtos\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 080 - Entidade: \cf2\b0 Produtos\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Produtos armazena os dados dos produtos disponiveis
+\par Atributos: Id_produto, Produto, Tipo, Preco, Quantidade, Validade \f0 
+\par \cf1\b 081 - Atributo: \cf2\b0 Produtos\cf1\b 
+\par \cf0\b0 varchar(80) not null
+\par 
+\par \cf1\b 082 - Entidade: \cf2\b0 Programa_fidelidade\cf1\b 
+\par \cf0\b0 Descri\f1\'e7\'e3o: A entidade Programa_fidelidade armazena os dados do programa fidelidade ativo
+\par Atributos: Id_programa_fidelidade, Nome, Pontos, Hist_compras, Validade, CPF \f0 
+\par \cf1\b 083 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 084 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 085 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 086 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 087 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 088 - Atributo: \cf2\b0 Quantidade_gasta\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 089 - Atributo: \cf2\b0 Quantidade_minima\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 090 - Rela\f1\'e7\'e3o: \cf2\b0 Realiza\cf1\b 
+\par \cf0\b0\f0 Um cliente pode realizar muitos pedidos; Um pedido pertence a um unico cliente
+\par 
+\par \cf1\b 091 - Atributo: \cf2\b0 Salario\cf1\b 
+\par \cf0\b0 decimal(5,2) not null
+\par 
+\par \cf1\b 092 - Atributo: \cf2\b0 Saldo_pontos\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par \cf1\b 093 - Atributo: \cf2\b0 Status\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 094 - Atributo: \cf2\b0 Status\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 095 - Atributo: \cf2\b0 Status\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 096 - Atributo: \cf2\b0 Status\cf1\b 
+\par \cf0\b0 enum("Ativo", "Inativo") default "Ativo"
+\par 
+\par \cf1\b 097 - Atributo: \cf2\b0 Taxa\cf1\b 
+\par \cf0\b0 decimal(3,2) not null
+\par 
+\par \cf1\b 098 - Atributo: \cf2\b0 Telefone\cf1\b 
+\par \cf0\b0 varchar(12) not null
+\par 
+\par \cf1\b 099 - Atributo: \cf2\b0 Tipo\cf1\b 
+\par \cf0\b0 varchar(30) not null
+\par 
+\par \cf1\b 100 - Atributo: \cf2\b0 Tipo_pedido\cf1\b 
+\par \cf0\b0 enum("Presencial", "Delivery") default "Presencial"
+\par 
+\par \cf1\b 101 - Atributo: \cf2\b0 Unidade_medida\cf1\b 
+\par \cf0\b0 varchar(20) not null
+\par 
+\par \cf1\b 102 - Atributo: \cf2\b0 Validade\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 103 - Atributo: \cf2\b0 Validade\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 104 - Atributo: \cf2\b0 Validade\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 105 - Atributo: \cf2\b0 Valor\cf1\b 
+\par \cf0\b0 decimal(4,2) not null
+\par 
+\par \cf1\b 106 - Atributo: \cf2\b0 Valor_total\cf1\b 
+\par \cf0\b0 decimal(5,2) not null
+\par 
+\par \cf1\b 107 - Atributo: \cf2\b0 data_cadastro\cf1\b 
+\par \cf0\b0 date not null
+\par 
+\par \cf1\b 108 - Atributo: \cf2\b0 email\cf1\b 
+\par \cf0\b0 varchar(30) not null
+\par 
+\par \cf1\b 109 - Atributo: \cf2\b0 preco_historico\cf1\b 
+\par \cf0\b0 decimal(5,2) not null
+\par 
+\par \cf1\b 110 - Atributo: \cf2\b0 quantidade\cf1\b 
+\par \cf0\b0 int not null
+\par 
+\par 
+\par }
+ 
