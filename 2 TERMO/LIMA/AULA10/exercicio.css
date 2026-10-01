@@ -1,0 +1,26 @@
+.equipe {
+    display: flex;
+    gap: 30px;
+    /* justify-content: flex-start; Texto no inicio */
+    /* justify-content: center; Texto no meio  */
+    /* justify-content: flex-end; Texto no final */
+    /* justify-content: space-between; Texto bem separado */
+    /* justify-content: space-evenly; Texto bem separado no meio */
+}
+
+
+.frutas {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /* align-items: center; Desce até o meio */
+    /* align-items: flex-end; Desce até o final */
+    height: 120px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ele deve ser aplicado diretamente no .cards, o elemento pai */
