@@ -5,7 +5,6 @@ body {
 
 main {
     background-color: #eee1d9;
-    padding: 10px;
 }
 
 article {
@@ -15,48 +14,68 @@ article {
     }
 }
 
-#superior {
-    background-color: #360303;
-    color: #f3e6d7;
+.superior {
+    background-color: #000000;
     padding: 10px;
-    h1 {
-        text-align: center;
-        font-family: "IBM Plex Serif", serif;
-        font-weight: 300;
-    }
-    h4 {
-        text-align: center;
-        font-family: "IBM Plex Serif", serif;
-        font-weight: 300;
-    }
 }
 
+.superior h1 {
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.smart {
+    color: white;
+}
+
+.coffee {
+    color: #ee6e18;
+}
+
+.superior h4 {
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    transform: translateY(-40px);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
 
 button {
     background-color: #C97C00;
+    cursor: pointer;
 }
 
-.banner-imagem {
-    img {
-        width: 1500px;
-        height: 500px; 
-
-    }
-    
+.botaoInicio {
 }
 
-.ambiente-imagem {
-    img {
-        width: 400px;
-        height: 200px;
-    }
+.banner img {
+    width: 1600px;
+    height: 600px;
+    margin-left: 0;
 }
 
-.instagram-smartcoffee {
-    img {
-        width: 100px;
-        height: 100px;
-    }
+.ambiente-imagem img {
+    width: 400px;
+    height: 200px;
+}
+
+.instagram-smartcoffee img {
+    width: 100px;
+    height: 100px;
 }
 
 footer {
