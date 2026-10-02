@@ -204,3 +204,25 @@ SELECT p.id_pedido,
 FROM pedido p
 JOIN cliente c ON c.id_cliente = p.id_cliente
 WHERE p.id_pedido = @pedido_compra;
+
+
+
+-- TRANSAÇÕES - SEGURANÇA PARA DML
+START TRANSACTION;
+UPDATE produto
+SET preco = preco * 2.80
+WHERE id_categoria = 1;
+
+SELECT id_produto, nome, preco
+FROM produto
+WHERE id_categoria = 1;
+-- DESFAZ O QUE FIZEMOS ERRADO OU VOLTA UMA TRANSAÇÃO
+ROLLBACK;
+-- VALIDA O PROCEDIMENTO DE TRANSAÇÃO
+COMMIT;
+
+START TRANSACTION;
+UPDATE cliente SET cidade = 'Santos' WHERE id_cliente = 121;
+SELECT * FROM cliente WHERE id_cliente = 121;
+COMMIT;
+ROLLBACK;
