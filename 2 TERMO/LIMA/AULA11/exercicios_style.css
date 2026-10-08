@@ -1,0 +1,46 @@
+.Seis {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    list-style: none;
+}
+
+.Seis_novo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .grid-img {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .grid-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Computador */
+@media (min-width: 901px) {
+    .grid-img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
