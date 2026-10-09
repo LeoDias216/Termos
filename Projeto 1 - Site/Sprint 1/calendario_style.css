@@ -67,3 +67,80 @@ nav a {
     border-bottom: 2px solid blueviolet;
     padding-bottom: 5px;
 }
+
+footer {
+    background-color: #252525;
+    color: white;
+
+    padding: 40px 80px 20px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.footer-logo p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 120px;
+
+    margin-top: 30px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.footer-links h3 {
+    margin: 0 0 8px;
+
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: blueviolet;
+}
+
+
+
+.footer-final {
+    border-top: 1px solid #555;
+
+    margin-top: 30px;
+    padding-top: 15px;
+
+    text-align: center;
+}
+
+.footer-final p {
+    margin: 0;
+
+    font-size: 12px;
+}
