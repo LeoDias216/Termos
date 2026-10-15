@@ -1,0 +1,215 @@
+/* VARIÁVEIS PARA FORMATAÇÃO GERAL */
+/* CRIAÇÃO DE LAYOUT DE CORES */
+:root {
+    /* Paleta de Cores */
+    --espresso: #2b170d;
+    --cafe: #5a321b;
+    --caramelo: #c66a1a;
+    --creme: #f3e6d7;
+    --marfim:#fff9f3;
+    --taupe:#9a887a;
+    --texto:#1e140f;
+    --branco:#ffffff;
+}
+
+
+/* Configurações Básicas */
+* {
+    box-sizing: border-box;
+    /* * Aplicar conteúdo a todo o site */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background-color: var(--marfim);
+    line-height: 1.6em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Formatação de Fontes e Tamanhos */
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--espresso);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+main {
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    padding: 20px;
+}
+
+article img {
+    width: 150px;
+    height: 100px;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--espresso);
+    padding: 20px 8%;
+}
+
+.menu {
+    display: flex;
+    gap: 23px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--caramelo);
+}
+
+.menu a:focus-visible {
+    outline: 3px solid var(--caramelo);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: var(--creme);
+    gap: 48px;
+    padding: 80px 8%;
+}
+
+.banner-conteudo, .banner-img {
+    flex: 1;
+}
+
+.banner-imagem {
+    margin: 0;
+}
+
+.banner-imagem img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--caramelo);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-principal:hover {
+    background-color: var(--cafe);
+}
+
+.btn-principal {
+    transition: background-color 0.2s ease;
+}
+
+.superior h1 {
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.smart {
+    color: white;
+}
+
+.coffee {
+    color: #ee6e18;
+}
+
+.superior h4 {
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    transform: translateY(-40px);
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ee6e18;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+button {
+    background-color: #C97C00;
+    cursor: pointer;
+}
+
+
+.banner img {
+    width: 1600px;
+    height: 600px;
+    margin-left: 0;
+}
+
+.ambiente-imagem img {
+    width: 400px;
+    height: 200px;
+}
+
+.instagram-smartcoffee img {
+    width: 100px;
+    height: 100px;
+}
+
+.lista-cafe {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer {
+    background-color: #222020;
+    color: #ffffff;
+}
