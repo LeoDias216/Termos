@@ -68,6 +68,610 @@ nav a {
     padding-bottom: 5px;
 }
 
+
+
+.pagina-sobre {
+    background-color: #eeeeee;
+    color: #292929;
+    font-family: "Roboto", sans-serif;
+}
+
+.pagina-sobre img {
+    display: block;
+    max-width: 100%;
+}
+
+.pagina-sobre h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: normal;
+}
+
+.etiqueta-sobre {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: blueviolet;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+.sobre-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+
+    padding: 65px 8%;
+    background-color: #eeeeee;
+}
+
+.sobre-intro-texto h2 {
+    margin: 0 0 20px;
+
+    font-size: 43px;
+    line-height: 1.2;
+    color: #252525;
+}
+
+.sobre-intro-texto p {
+    max-width: 520px;
+    margin: 0 0 15px;
+
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.sobre-intro-imagem {
+    width: 100%;
+    height: 340px;
+
+    overflow: hidden;
+    border-radius: 12px;
+
+    background-color: #d5d5d5;
+}
+
+.sobre-intro-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.botao-sobre {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 13px 23px;
+
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+.botao-sobre:hover {
+    background-color: orangered;
+    transform: translateY(-2px);
+}
+
+
+
+.sobre-indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+
+    padding: 35px 8%;
+
+    background-color: #d9d9d9;
+}
+
+.indicador-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 22px 15px;
+
+    text-align: center;
+}
+
+.indicador-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+    margin-bottom: 12px;
+
+    border-radius: 50%;
+    background-color: #eeeeee;
+
+    font-size: 25px;
+}
+
+.indicador-sobre h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.indicador-sobre p {
+    margin: 0;
+
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+
+.nossa-historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+
+    padding: 65px 8%;
+    background-color: #ffffff;
+}
+
+.historia-imagem {
+    height: 310px;
+    overflow: hidden;
+
+    border-radius: 10px;
+    background-color: #d5d5d5;
+}
+
+.historia-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.historia-texto h2 {
+    margin: 0 0 20px;
+
+    font-size: 34px;
+    line-height: 1.25;
+}
+
+.historia-texto p {
+    margin: 0 0 15px;
+
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
+.titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.titulo-secao > p {
+    margin: 0;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+.o-que-nos-move {
+    padding: 65px 8%;
+    background-color: #eeeeee;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.valor-card {
+    padding: 30px 25px;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.1);
+}
+
+.valor-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    background-color: #eee2ff;
+
+    font-size: 24px;
+}
+
+.valor-card h3 {
+    margin: 0 0 12px;
+
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.valor-card p {
+    margin: 0;
+
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
+.nossos-diferenciais {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+    align-items: start;
+
+    padding: 65px 8%;
+    background-color: #ffffff;
+}
+
+.diferenciais-cabecalho h2 {
+    margin: 0 0 15px;
+    font-size: 35px;
+    line-height: 1.3;
+}
+
+.diferenciais-cabecalho > p {
+    margin: 0;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.diferenciais-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.diferencial-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.diferencial-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.diferencial-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 10px;
+    background-color: #eee2ff;
+    color: blueviolet;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.diferencial-item h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+.diferencial-item p {
+    margin: 0;
+
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+
+.sobre-areas {
+    padding: 65px 8%;
+    background-color: #eeeeee;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.area-card {
+    overflow: hidden;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+}
+
+.area-card > img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.area-card-texto {
+    padding: 18px;
+}
+
+.area-card-texto h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+
+.area-card-texto p {
+    margin: 0;
+
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.area-card-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.area-extra-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 160px;
+
+    background-color: #d9c2f4;
+    font-size: 50px;
+}
+
+.botao-centralizado {
+    display: block;
+    width: fit-content;
+
+    margin: 35px auto 0;
+}
+
+
+
+.sobre-convite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 45px 8%;
+
+    background-color: rgb(253, 215, 180);
+}
+
+.sobre-convite h2 {
+    margin: 0 0 12px;
+
+    color: orangered;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.sobre-convite p {
+    max-width: 600px;
+    margin: 0;
+
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.botao-convite-sobre {
+    display: inline-block;
+    flex-shrink: 0;
+
+    padding: 14px 22px;
+
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+
+.botao-convite-sobre:hover {
+    background-color: orangered;
+}
+
+
+
+@media (max-width: 1000px) {
+    .sobre-intro,
+    .nossa-historia {
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    .sobre-intro-texto h2 {
+        font-size: 35px;
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nossos-diferenciais {
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    .valores-grid {
+        gap: 15px;
+    }
+
+    .valor-card {
+        padding: 22px 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sobre-intro,
+    .nossa-historia,
+    .nossos-diferenciais {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-intro {
+        padding: 40px 6%;
+    }
+
+    .sobre-intro-texto h2 {
+        font-size: 34px;
+    }
+
+    .sobre-intro-imagem {
+        height: 260px;
+    }
+
+    .historia-imagem {
+        height: 250px;
+    }
+
+    .sobre-indicadores {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 25px 6%;
+    }
+
+    .indicador-sobre {
+        padding: 15px;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nossa-historia,
+    .o-que-nos-move,
+    .nossos-diferenciais,
+    .sobre-areas {
+        padding: 45px 6%;
+    }
+
+    .titulo-secao h2,
+    .diferenciais-cabecalho h2 {
+        font-size: 29px;
+    }
+
+    .sobre-convite {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 40px 6%;
+    }
+
+    .sobre-convite h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 450px) {
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-intro-texto h2 {
+        font-size: 30px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 26px;
+    }
+
+    .area-card > img,
+    .area-extra-icone {
+        height: 190px;
+    }
+
+    .botao-convite-sobre {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 20px 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+}
+
 footer {
     background-color: #252525;
     color: white;
