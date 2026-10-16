@@ -16,7 +16,7 @@ header {
     position: relative;
     width: 100%;
     p {
-        color: white;
+        color: #531C7A;
         margin-top: -25px;
         font-family: "Racing Sans One", sans-serif;
     }
@@ -37,15 +37,15 @@ span {
 
 .Diplo {
     color: orangered;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
 .Mais {
     color: blueviolet;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -70,304 +70,276 @@ nav a {
 
 
 
+/* ==============================
+   CONFIGURAÇÕES GERAIS DO MAIN
+============================== */
+
 .pagina-sobre {
-    background-color: #eeeeee;
-    color: #292929;
+    width: 100%;
+    background-color: #F5F1F8;
+    color: #292333;
     font-family: "Roboto", sans-serif;
 }
 
-.pagina-sobre img {
-    display: block;
-    max-width: 100%;
+.pagina-sobre section {
+    padding: 75px 8%;
 }
 
 .pagina-sobre h2 {
-    font-family: "Racing Sans One", sans-serif;
-    font-weight: normal;
+    color: #7028A0;
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.pagina-sobre h3 {
+    color: #7028A0;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.pagina-sobre p {
+    color: #51485C;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .etiqueta-sobre {
     display: inline-block;
-    margin-bottom: 12px;
-
-    color: blueviolet;
+    color: #7028A0;
+    background-color: #E8DDF0;
+    padding: 8px 14px;
+    border-radius: 20px;
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
 }
 
 
+/* ==============================
+   INTRODUÇÃO
+============================== */
 
 .sobre-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 45px;
+    justify-content: space-between;
+    gap: 55px;
+    background-color: #F5F1F8;
+    min-height: 500px;
+}
 
-    padding: 65px 8%;
-    background-color: #ffeed7;
+.sobre-intro-texto {
+    flex: 1;
 }
 
 .sobre-intro-texto h2 {
-    margin: 0 0 20px;
-
-    font-size: 43px;
+    font-size: 42px;
     line-height: 1.2;
-    color: #252525;
+    margin-bottom: 25px;
 }
 
 .sobre-intro-texto p {
-    max-width: 520px;
-    margin: 0 0 15px;
-
-    color: #555555;
-    font-size: 15px;
-    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 550px;
 }
 
 .sobre-intro-imagem {
-    width: 100%;
-    height: 340px;
-
-    overflow: hidden;
-    border-radius: 12px;
-
-    background-color: #d5d5d5;
+    flex: 1;
+    min-width: 0;
 }
 
 .sobre-intro-imagem img {
+    display: block;
     width: 100%;
-    height: 100%;
+    max-height: 400px;
     object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(65, 35, 85, 0.15);
 }
 
 
+/* ==============================
+   BOTÕES
+============================== */
 
 .botao-sobre {
     display: inline-block;
-
+    background-color: #7028A0;
+    color: #FFFFFF;
+    padding: 14px 24px;
     margin-top: 15px;
-    padding: 13px 23px;
-
-    border-radius: 7px;
-    background-color: blueviolet;
-    color: white;
-
-    font-size: 14px;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
     text-decoration: none;
-
-    transition:
-        background-color 0.3s,
-        transform 0.3s;
 }
 
 .botao-sobre:hover {
-    background-color: orangered;
-    transform: translateY(-2px);
+    background-color: #531C7A;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(112, 40, 160, 0.2);
 }
 
 
+/* ==============================
+   INDICADORES
+============================== */
 
 .sobre-indicadores {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-
-    padding: 35px 8%;
-
-    background-color: blueviolet;
-    color: white;
+    background-color: #E8DDF0;
 }
 
 .indicador-sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 22px 15px;
-
+    background-color: #FFFFFF;
     text-align: center;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(65, 35, 85, 0.07);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.indicador-sobre:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(65, 35, 85, 0.12);
 }
 
 .indicador-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 55px;
-    height: 55px;
-    margin-bottom: 12px;
-
-    border-radius: 50%;
-    background-color: #eeeeee;
-
-    font-size: 25px;
+    display: block;
+    font-size: 38px;
+    margin-bottom: 18px;
 }
 
 .indicador-sobre h3 {
-    margin: 0 0 8px;
-    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .indicador-sobre p {
-    margin: 0;
-
-    color: white;
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 14px;
 }
 
 
+/* ==============================
+   NOSSA HISTÓRIA
+============================== */
 
 .nossa-historia {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 45px;
-
-    padding: 65px 8%;
-    background-color: #ffffff;
+    gap: 60px;
+    background-color: #FFFFFF;
 }
 
 .historia-imagem {
-    height: 310px;
-    overflow: hidden;
-
-    border-radius: 10px;
-    background-color: #d5d5d5;
+    flex: 1;
+    min-width: 0;
 }
 
 .historia-imagem img {
+    display: block;
     width: 100%;
-    height: 100%;
+    max-height: 420px;
     object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(65, 35, 85, 0.12);
+}
+
+.historia-texto {
+    flex: 1;
 }
 
 .historia-texto h2 {
-    margin: 0 0 20px;
-
-    font-size: 34px;
-    line-height: 1.25;
+    font-size: 32px;
 }
 
 .historia-texto p {
-    margin: 0 0 15px;
-
-    color: #555555;
-    font-size: 14px;
-    line-height: 1.8;
+    margin-bottom: 16px;
 }
 
 
+/* ==============================
+   PROPÓSITO E VALORES
+============================== */
+
+.o-que-nos-move {
+    background-color: #F5F1F8;
+}
 
 .titulo-secao {
-    max-width: 700px;
-    margin: 0 auto 35px;
-
+    max-width: 750px;
+    margin: 0 auto 45px;
     text-align: center;
 }
 
 .titulo-secao h2 {
-    margin: 0 0 12px;
     font-size: 34px;
-    line-height: 1.3;
 }
 
-.titulo-secao > p {
-    margin: 0;
-
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-
-
-.o-que-nos-move {
-    padding: 65px 8%;
-    background-color: #eeeeee;
+.titulo-secao p {
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .valores-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-
-    max-width: 1150px;
-    margin: 0 auto;
 }
 
 .valor-card {
-    padding: 30px 25px;
-
-    border-radius: 10px;
-    background-color: #ffffff;
-
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #FFFFFF;
+    padding: 35px 28px;
+    border-radius: 16px;
+    border-bottom: 4px solid #7028A0;
+    box-shadow: 0 5px 18px rgba(65, 35, 85, 0.07);
+    transition: transform 0.3s ease;
 }
 
 .valor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
 }
 
 .valor-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
-
-    border-radius: 10px;
-    background-color: #eee2ff;
-
-    font-size: 24px;
-}
-
-.valor-card h3 {
-    margin: 0 0 12px;
-
-    color: blueviolet;
-    font-size: 20px;
+    display: block;
+    font-size: 35px;
+    margin-bottom: 18px;
 }
 
 .valor-card p {
-    margin: 0;
-
-    color: #555555;
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 15px;
 }
 
 
+/* ==============================
+   DIFERENCIAIS
+============================== */
 
 .nossos-diferenciais {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 50px;
-    align-items: start;
+    background-color: #FFFFFF;
+}
 
-    padding: 65px 8%;
-    background-color: #ffffff;
+.diferenciais-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .diferenciais-cabecalho h2 {
-    margin: 0 0 15px;
-    font-size: 35px;
-    line-height: 1.3;
+    margin-bottom: 0;
 }
 
 .diferenciais-cabecalho > p {
-    margin: 0;
-
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.8;
+    max-width: 400px;
 }
 
 .diferenciais-lista {
@@ -379,205 +351,167 @@ nav a {
 .diferencial-item {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-
-    padding-bottom: 20px;
-    border-bottom: 1px solid #dddddd;
+    gap: 25px;
+    background-color: #F5F1F8;
+    padding: 25px;
+    border-radius: 14px;
+    border-left: 5px solid #FF8C00;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
-.diferencial-item:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
+.diferencial-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 18px rgba(65, 35, 85, 0.08);
 }
 
 .diferencial-numero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-    width: 45px;
-    height: 45px;
-
-    border-radius: 10px;
-    background-color: #eee2ff;
-    color: blueviolet;
-
-    font-size: 15px;
-    font-weight: 700;
+    color: #7028A0;
+    font-size: 28px;
+    font-weight: 900;
+    min-width: 45px;
 }
 
 .diferencial-item h3 {
-    margin: 0 0 8px;
-    font-size: 17px;
+    margin-bottom: 8px;
 }
 
 .diferencial-item p {
-    margin: 0;
-
-    color: #666666;
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 15px;
 }
 
 
+/* ==============================
+   ÁREAS DE CONHECIMENTO
+============================== */
 
 .sobre-areas {
-    padding: 65px 8%;
-    background-color: #eeeeee;
+    background-color: #F5F1F8;
 }
 
 .areas-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 35px;
 }
 
 .area-card {
-    overflow: hidden;
-
-    border-radius: 10px;
-    background-color: #ffffff;
-
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-
-    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background-color: #FFFFFF;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #E8DDF0;
+    box-shadow: 0 5px 15px rgba(65, 35, 85, 0.05);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .area-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(65, 35, 85, 0.1);
 }
 
-.area-card > img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.area-card-texto {
-    padding: 18px;
-}
-
-.area-card-texto h3 {
-    margin: 0 0 10px;
-    font-size: 17px;
-}
-
-.area-card-texto p {
-    margin: 0;
-
-    color: #666666;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.area-card-extra {
-    display: flex;
-    flex-direction: column;
-}
-
-.area-extra-icone1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 160px;
-
-    background-color: #c2e6f4;
-    font-size: 50px;
-}
-.area-extra-icone2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 160px;
-
-    background-color: #f4dac2;
-    font-size: 50px;
-}
-.area-extra-icone3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 160px;
-
-    background-color: #e0d1d1;
-    font-size: 50px;
-}
+.area-extra-icone1,
+.area-extra-icone2,
+.area-extra-icone3,
 .area-extra-icone4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    font-size: 30px;
+}
 
-    height: 160px;
+.area-extra-icone1 {
+    background-color: #FFF0D9;
+}
 
-    background-color: #d9c2f4;
-    font-size: 50px;
+.area-extra-icone2 {
+    background-color: #E8DDF0;
+}
+
+.area-extra-icone3 {
+    background-color: #FBE3D3;
+}
+
+.area-extra-icone4 {
+    background-color: #E8E2F8;
+}
+
+.area-card-texto {
+    flex: 1;
+}
+
+.area-card h3 {
+    margin-bottom: 8px;
+}
+
+.area-card p {
+    font-size: 14px;
 }
 
 .botao-centralizado {
-    display: block;
-    width: fit-content;
-
+    display: table;
     margin: 35px auto 0;
+    text-align: center;
 }
 
 
+/* ==============================
+   CONVITE FINAL
+============================== */
 
 .sobre-convite {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    text-align: center;
+    background-color: #E8DDF0;
+    padding: 70px 20px;
+}
 
-    padding: 45px 8%;
-
-    background-color: rgb(253, 215, 180);
+.sobre-convite > div {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .sobre-convite h2 {
-    margin: 0 0 12px;
-
-    color: orangered;
-    font-size: 30px;
-    line-height: 1.3;
+    font-size: 36px;
+    margin-bottom: 18px;
+    text-align: center;
 }
 
 .sobre-convite p {
-    max-width: 600px;
-    margin: 0;
-
-    color: #444444;
-    font-size: 14px;
-    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
+/* ==============================
+   RESPONSIVIDADE DO MAIN
+============================== */
 
+@media (max-width: 900px) {
 
-@media (max-width: 1000px) {
+    .pagina-sobre section {
+        padding: 55px 5%;
+    }
+
     .sobre-intro,
     .nossa-historia {
         gap: 30px;
-        padding: 50px 5%;
     }
 
     .sobre-intro-texto h2 {
-        font-size: 35px;
-    }
-
-    .areas-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .nossos-diferenciais {
-        gap: 30px;
-        padding: 50px 5%;
+        font-size: 34px;
     }
 
     .valores-grid {
@@ -585,100 +519,80 @@ nav a {
     }
 
     .valor-card {
-        padding: 22px 18px;
+        padding: 25px 20px;
     }
 }
 
-@media (max-width: 700px) {
-    .sobre-intro,
-    .nossa-historia,
-    .nossos-diferenciais {
-        grid-template-columns: 1fr;
+@media (max-width: 650px) {
+
+    .pagina-sobre section {
+        padding: 45px 6%;
     }
 
-    .sobre-intro {
-        padding: 40px 6%;
+    .pagina-sobre h2 {
+        font-size: 28px;
+    }
+
+    .sobre-intro,
+    .nossa-historia {
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .sobre-intro-texto h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
-    .sobre-intro-imagem {
-        height: 260px;
+    .sobre-intro-imagem img,
+    .historia-imagem img {
+        max-height: 300px;
     }
 
-    .historia-imagem {
-        height: 250px;
-    }
-
-    .sobre-indicadores {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 25px 6%;
-    }
-
-    .indicador-sobre {
-        padding: 15px;
-    }
-
+    .sobre-indicadores,
     .valores-grid {
         grid-template-columns: 1fr;
     }
 
-    .nossa-historia,
-    .o-que-nos-move,
-    .nossos-diferenciais,
-    .sobre-areas {
-        padding: 45px 6%;
+    .indicador-sobre {
+        padding: 28px 20px;
     }
 
-    .titulo-secao h2,
-    .diferenciais-cabecalho h2 {
-        font-size: 29px;
-    }
-
-    .sobre-convite {
+    .diferenciais-cabecalho {
         flex-direction: column;
         align-items: flex-start;
-
-        padding: 40px 6%;
+        gap: 15px;
     }
 
-    .sobre-convite h2 {
-        font-size: 26px;
+    .diferencial-item {
+        gap: 15px;
+        padding: 20px 15px;
     }
-}
 
-@media (max-width: 450px) {
+    .diferencial-numero {
+        font-size: 23px;
+        min-width: 35px;
+    }
+
     .areas-grid {
         grid-template-columns: 1fr;
     }
 
-    .sobre-intro-texto h2 {
-        font-size: 30px;
+    .area-card {
+        padding: 22px 18px;
+        gap: 15px;
     }
 
-    .titulo-secao h2 {
-        font-size: 26px;
+    .area-extra-icone1,
+    .area-extra-icone2,
+    .area-extra-icone3,
+    .area-extra-icone4 {
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
     }
 
-    .area-card > img,
-    .area-extra-icone {
-        height: 190px;
-    }
-
-    .botao-convite-sobre {
-        width: 100%;
-    }
-
-    footer {
-        padding: 30px 20px 20px;
-    }
-
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 35px;
+    .sobre-convite h2 {
+        font-size: 28px;
     }
 }
 

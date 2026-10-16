@@ -15,12 +15,11 @@ header {
     margin-top: -20px;
     position: relative;
     width: 100%;
-}
-
-header p {
-    color: white;
-    margin-top: -25px;
-    font-family: "Racing Sans One", sans-serif;
+    p {
+        color: #531C7A;
+        margin-top: -25px;
+        font-family: "Racing Sans One", sans-serif;
+    }
 }
 
 .polvo {
@@ -32,22 +31,21 @@ header p {
     
 }
 
-
 span {
     margin-bottom: 5px;
 }
 
 .Diplo {
     color: orangered;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
 .Mais {
     color: blueviolet;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 

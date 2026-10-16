@@ -16,7 +16,7 @@ header {
     position: relative;
     width: 100%;
     p {
-        color: white;
+        color: #531C7A;
         margin-top: -25px;
         font-family: "Racing Sans One", sans-serif;
     }
@@ -37,15 +37,15 @@ span {
 
 .Diplo {
     color: orangered;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
 .Mais {
     color: blueviolet;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 

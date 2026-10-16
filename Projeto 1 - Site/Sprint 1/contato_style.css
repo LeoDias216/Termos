@@ -1,29 +1,13 @@
-
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
-
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
-
-body {
-    font-family: "Roboto", sans-serif;
-    color: #292333;
-}
-
-
-/* =========================
-   CABEÇALHO
-========================= */
 
 header {
     background-color: darkorange;
@@ -31,12 +15,11 @@ header {
     margin-top: -20px;
     position: relative;
     width: 100%;
-}
-
-header p {
-    color: white;
-    margin-top: -25px;
-    font-family: "Racing Sans One", sans-serif;
+    p {
+        color: #531C7A;
+        margin-top: -25px;
+        font-family: "Racing Sans One", sans-serif;
+    }
 }
 
 .polvo {
@@ -45,23 +28,24 @@ header p {
     top: -40px;
     width: 220px;
     height: 220px;
+    
 }
 
-header span {
+span {
     margin-bottom: 5px;
 }
 
 .Diplo {
     color: orangered;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
 .Mais {
     color: blueviolet;
-    font-family: "Faster One", system-ui;
-    font-weight: 400;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -75,11 +59,7 @@ nav a {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     color: white;
-}
-
-nav a:hover {
-    color: #eee2ff;
-}
+}    
 
 .pagina_atual {
     color: blueviolet;
@@ -89,9 +69,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   PÁGINA DE CONTATO
-========================= */
 
 .pagina-contato {
     font-family: "Roboto", sans-serif;
@@ -100,9 +77,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   FORMULÁRIO E CONTATOS
-========================= */
 
 .area-contato {
     display: grid;
@@ -115,7 +89,6 @@ nav a:hover {
 }
 
 
-/* Formulário */
 
 .form-contato {
     width: 100%;
@@ -139,7 +112,6 @@ nav a:hover {
 }
 
 
-/* Campos */
 
 .campo {
     display: flex;
@@ -197,9 +169,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   ANEXO DE ARQUIVO
-========================= */
 
 .campo-anexo {
     margin-top: 5px;
@@ -251,9 +220,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   BOTÃO ENVIAR
-========================= */
 
 .botao-enviar {
     display: block;
@@ -282,9 +248,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   MEIOS DE CONTATO
-========================= */
 
 .meios-contato {
     width: 100%;
@@ -369,7 +332,7 @@ nav a:hover {
     padding: 6px 10px;
 
     background-color: #7028A0;
-    color: #FFFFFF;
+    color: #ffffff;
 
     text-decoration: none;
     border-radius: 5px;
@@ -381,9 +344,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   PERGUNTAS FREQUENTES
-========================= */
+
 
 .area-faq {
     display: grid;
@@ -397,7 +358,6 @@ nav a:hover {
 }
 
 
-/* Título */
 
 .titulo-faq {
     justify-self: center;
@@ -413,7 +373,6 @@ nav a:hover {
 }
 
 
-/* Painel das perguntas */
 
 .lista-faq {
     width: 100%;
@@ -426,7 +385,6 @@ nav a:hover {
 }
 
 
-/* Cada pergunta */
 
 .item-faq {
     margin-bottom: 8px;
@@ -441,7 +399,6 @@ nav a:hover {
 }
 
 
-/* Pergunta clicável */
 
 .item-faq summary {
     position: relative;
@@ -461,7 +418,6 @@ nav a:hover {
 }
 
 
-/* Símbolo de abrir */
 
 .item-faq summary::before {
     content: "+";
@@ -484,7 +440,6 @@ nav a:hover {
 }
 
 
-/* Resposta */
 
 .item-faq > p {
     margin: 0;
@@ -496,7 +451,6 @@ nav a:hover {
 }
 
 
-/* Botão para central de ajuda */
 
 .botao-faq {
     display: block;
@@ -522,9 +476,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
 
 footer {
     background-color: #252525;
@@ -593,9 +544,6 @@ footer {
 }
 
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
 
 @media (max-width: 800px) {
 
@@ -663,4 +611,10 @@ footer {
         flex-wrap: wrap;
         gap: 35px;
     }
+}
+
+.contato-texto a.link-contato,
+.contato-texto a.link-contato:visited,
+.contato-texto a.link-contato:hover {
+    color: #FFFFFF;
 }
