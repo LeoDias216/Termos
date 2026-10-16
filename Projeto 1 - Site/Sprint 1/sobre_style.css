@@ -105,7 +105,7 @@ nav a {
     gap: 45px;
 
     padding: 65px 8%;
-    background-color: #eeeeee;
+    background-color: #ffeed7;
 }
 
 .sobre-intro-texto h2 {
@@ -176,7 +176,8 @@ nav a {
 
     padding: 35px 8%;
 
-    background-color: #d9d9d9;
+    background-color: blueviolet;
+    color: white;
 }
 
 .indicador-sobre {
@@ -212,7 +213,7 @@ nav a {
 .indicador-sobre p {
     margin: 0;
 
-    color: #555555;
+    color: white;
     font-size: 13px;
     line-height: 1.6;
 }
@@ -478,7 +479,37 @@ nav a {
     flex-direction: column;
 }
 
-.area-extra-icone {
+.area-extra-icone1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 160px;
+
+    background-color: #c2e6f4;
+    font-size: 50px;
+}
+.area-extra-icone2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 160px;
+
+    background-color: #f4dac2;
+    font-size: 50px;
+}
+.area-extra-icone3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 160px;
+
+    background-color: #e0d1d1;
+    font-size: 50px;
+}
+.area-extra-icone4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -526,27 +557,6 @@ nav a {
     line-height: 1.7;
 }
 
-.botao-convite-sobre {
-    display: inline-block;
-    flex-shrink: 0;
-
-    padding: 14px 22px;
-
-    border-radius: 7px;
-    background-color: blueviolet;
-    color: #ffffff;
-
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-
-    transition: background-color 0.3s;
-}
-
-.botao-convite-sobre:hover {
-    background-color: orangered;
-}
 
 
 

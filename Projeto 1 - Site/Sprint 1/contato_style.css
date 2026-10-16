@@ -1,13 +1,29 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #292333;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
 
 header {
     background-color: darkorange;
@@ -15,11 +31,12 @@ header {
     margin-top: -20px;
     position: relative;
     width: 100%;
-    p {
-        color: white;
-        margin-top: -25px;
-        font-family: "Racing Sans One", sans-serif;
-    }
+}
+
+header p {
+    color: white;
+    margin-top: -25px;
+    font-family: "Racing Sans One", sans-serif;
 }
 
 .polvo {
@@ -28,10 +45,9 @@ header {
     top: -40px;
     width: 220px;
     height: 220px;
-    
 }
 
-span {
+header span {
     margin-bottom: 5px;
 }
 
@@ -59,7 +75,11 @@ nav a {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     color: white;
-}    
+}
+
+nav a:hover {
+    color: #eee2ff;
+}
 
 .pagina_atual {
     color: blueviolet;
@@ -69,17 +89,24 @@ nav a {
 }
 
 
+/* =========================
+   PÁGINA DE CONTATO
+========================= */
+
 .pagina-contato {
     font-family: "Roboto", sans-serif;
-    color: #222222;
-    background-color: rgb(253, 215, 180);
+    color: #292333;
+    background-color: #F5F1F8;
 }
 
 
+/* =========================
+   FORMULÁRIO E CONTATOS
+========================= */
 
 .area-contato {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
     gap: 9%;
 
@@ -88,15 +115,20 @@ nav a {
 }
 
 
+/* Formulário */
 
 .form-contato {
     width: 100%;
     max-width: 480px;
     justify-self: center;
 
-    padding: 20px 24px;
+    padding: 25px 24px;
 
-    background-color: orangered;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D9EF;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(65, 35, 85, 0.08);
 }
 
 .form-contato h2 {
@@ -105,6 +137,9 @@ nav a {
     font-size: 20px;
     font-weight: 600;
 }
+
+
+/* Campos */
 
 .campo {
     display: flex;
@@ -125,13 +160,15 @@ nav a {
     width: 100%;
     min-width: 0;
 
-    border: none;
+    border: 1px solid #DED5E5;
+    border-radius: 6px;
     outline: none;
 
-    background-color: white;
-    color: #292929;
+    background-color: #FFFFFF;
+    color: #292333;
 
     padding: 10px;
+
     font-family: "Roboto", sans-serif;
     font-size: 13px;
 }
@@ -154,11 +191,15 @@ nav a {
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-    outline: 2px solid blueviolet;
+    border-color: #7028A0;
+    outline: 2px solid #E8D8F5;
     outline-offset: 1px;
 }
 
 
+/* =========================
+   ANEXO DE ARQUIVO
+========================= */
 
 .campo-anexo {
     margin-top: 5px;
@@ -167,9 +208,11 @@ nav a {
 
 .campo-anexo input[type="file"] {
     position: absolute;
+
     width: 1px;
     height: 1px;
     padding: 0;
+
     overflow: hidden;
     clip-path: inset(50%);
     white-space: nowrap;
@@ -184,7 +227,8 @@ nav a {
     padding: 9px 13px;
 
     border-radius: 20px;
-    background-color: #f5f5f5;
+    background-color: #EEE2FF;
+    color: #7028A0;
 
     font-size: 12px !important;
     cursor: pointer;
@@ -193,11 +237,12 @@ nav a {
 }
 
 .botao-anexo:hover {
-    background-color: #c9b1e8;
+    background-color: #E0C9F5;
 }
 
-.campo-anexo input[type="file"]:focus-visible + .nome-arquivo {
-    outline: 2px solid blueviolet;
+.campo-anexo input[type="file"]:focus-visible
++ .nome-arquivo {
+    outline: 2px solid #7028A0;
 }
 
 .nome-arquivo {
@@ -206,6 +251,9 @@ nav a {
 }
 
 
+/* =========================
+   BOTÃO ENVIAR
+========================= */
 
 .botao-enviar {
     display: block;
@@ -217,25 +265,26 @@ nav a {
     border: none;
     border-radius: 20px;
 
-    background-color: #f5f5f5;
-    color: #222222;
+    background-color: #7028A0;
+    color: #FFFFFF;
 
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     font-weight: 600;
 
     cursor: pointer;
-    transition:
-        background-color 0.3s,
-        color 0.3s;
+
+    transition: background-color 0.3s;
 }
 
 .botao-enviar:hover {
-    background-color: blueviolet;
-    color: white;
+    background-color: #531C78;
 }
 
 
+/* =========================
+   MEIOS DE CONTATO
+========================= */
 
 .meios-contato {
     width: 100%;
@@ -244,7 +293,11 @@ nav a {
 
     padding: 22px;
 
-    background-color: orangered;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D9EF;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(65, 35, 85, 0.08);
 }
 
 .meios-contato > h2 {
@@ -252,7 +305,7 @@ nav a {
 
     text-align: center;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contato-item {
@@ -260,10 +313,11 @@ nav a {
     align-items: center;
     gap: 15px;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 15px;
 
-    background-color: rgb(253, 215, 180);
+    background-color: #F5F1F8;
+    border-radius: 8px;
 }
 
 .contato-item:last-child {
@@ -280,7 +334,7 @@ nav a {
     height: 28px;
 
     font-size: 24px;
-    color: #222222;
+    color: #7028A0;
 }
 
 .contato-texto {
@@ -290,8 +344,9 @@ nav a {
 
 .contato-texto h3 {
     margin: 0 0 4px;
+
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contato-texto p,
@@ -302,7 +357,7 @@ nav a {
 }
 
 .contato-texto a {
-    color: #ffffff;
+    color: #7028A0;
     overflow-wrap: anywhere;
 }
 
@@ -311,18 +366,24 @@ nav a {
     width: fit-content;
 
     margin: 6px 0 0 auto;
-    padding: 5px 10px;
+    padding: 6px 10px;
 
-    background-color: orangered;
+    background-color: #7028A0;
+    color: #FFFFFF;
+
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 11px;
 }
 
 .link-contato:hover {
-    background-color: #c9b1e8;
+    background-color: #531C78;
 }
 
 
+/* =========================
+   PERGUNTAS FREQUENTES
+========================= */
 
 .area-faq {
     display: grid;
@@ -330,14 +391,17 @@ nav a {
     align-items: center;
     gap: 35px;
 
-    padding: 35px 9%;
+    padding: 40px 9%;
 
-    background-color: #cf31c7;
+    background-color: #E8DDF0;
 }
+
+
+/* Título */
 
 .titulo-faq {
     justify-self: center;
-    color: white;
+    color: #292333;
 }
 
 .titulo-faq h2 {
@@ -348,25 +412,43 @@ nav a {
     font-weight: 700;
 }
 
+
+/* Painel das perguntas */
+
 .lista-faq {
     width: 100%;
     padding: 15px;
 
-    background-color: orange;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(65, 35, 85, 0.06);
 }
 
 
+/* Cada pergunta */
 
 .item-faq {
     margin-bottom: 8px;
-    background-color: white;
+
+    background-color: #F5F1F8;
+    border-radius: 5px;
+    overflow: hidden;
 }
+
+.item-faq:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* Pergunta clicável */
 
 .item-faq summary {
     position: relative;
 
     padding: 12px 12px 12px 32px;
 
+    color: #292333;
     font-size: 13px;
     line-height: 1.5;
 
@@ -379,6 +461,8 @@ nav a {
 }
 
 
+/* Símbolo de abrir */
+
 .item-faq summary::before {
     content: "+";
 
@@ -386,8 +470,9 @@ nav a {
     left: 12px;
     top: 10px;
 
+    color: #7028A0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .item-faq[open] summary::before {
@@ -395,19 +480,23 @@ nav a {
 }
 
 .item-faq summary:hover {
-    background-color: #f4eaff;
+    background-color: #E8D8F5;
 }
+
+
+/* Resposta */
 
 .item-faq > p {
     margin: 0;
     padding: 0 15px 15px 32px;
 
+    color: #555555;
     font-size: 12px;
     line-height: 1.6;
-    color: #555555;
 }
 
 
+/* Botão para central de ajuda */
 
 .botao-faq {
     display: block;
@@ -417,25 +506,103 @@ nav a {
     margin: 12px auto 0;
     padding: 9px 12px;
 
-    background-color: #cf31c7;
-    color: #ffffff;
+    background-color: #7028A0;
+    color: #FFFFFF;
 
     text-align: center;
     text-decoration: none;
     font-size: 12px;
+
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .botao-faq:hover {
-    background-color: #c9b1e8;
+    background-color: #531C78;
 }
 
 
+/* =========================
+   RODAPÉ
+========================= */
 
+footer {
+    background-color: #252525;
+    color: #FFFFFF;
+
+    padding: 40px 80px 20px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.footer-logo p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+
+    margin-top: 30px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #D6B5F2;
+}
+
+.footer-final {
+    border-top: 1px solid #555555;
+
+    margin-top: 30px;
+    padding-top: 15px;
+
+    text-align: center;
+}
+
+.footer-final p {
+    margin: 0;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
 
 @media (max-width: 800px) {
+
     .area-contato {
         grid-template-columns: 1fr;
         gap: 30px;
+
         padding: 35px 6%;
     }
 
@@ -447,6 +614,7 @@ nav a {
     .area-faq {
         grid-template-columns: 1fr;
         gap: 25px;
+
         padding: 35px 6%;
     }
 
@@ -459,7 +627,9 @@ nav a {
     }
 }
 
+
 @media (max-width: 500px) {
+
     .area-contato {
         padding: 25px 15px;
     }
@@ -493,83 +663,4 @@ nav a {
         flex-wrap: wrap;
         gap: 35px;
     }
-}
-
-
-
-footer {
-    background-color: #252525;
-    color: white;
-
-    padding: 40px 80px 20px;
-
-    font-family: "Roboto", sans-serif;
-}
-
-
-.footer-logo {
-    text-align: center;
-}
-
-.footer-logo h2 {
-    margin: 0;
-    font-size: 35px;
-}
-
-.footer-logo p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-
-    gap: 120px;
-
-    margin-top: 30px;
-}
-
-.footer-links div {
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-.footer-links h3 {
-    margin: 0 0 8px;
-
-    font-size: 16px;
-}
-
-.footer-links a {
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 13px;
-}
-
-.footer-links a:hover {
-    color: blueviolet;
-}
-
-
-
-.footer-final {
-    border-top: 1px solid #555;
-
-    margin-top: 30px;
-    padding-top: 15px;
-
-    text-align: center;
-}
-
-.footer-final p {
-    margin: 0;
-
-    font-size: 12px;
 }
