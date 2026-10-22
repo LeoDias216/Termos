@@ -1,0 +1,59 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(7, 7, 46);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+}
+
+.techworld {
+    color: white;
+    font-size: medium;
+}
+
+.rpg {
+    color: gold;
+    font-size: medium;
+}
+
+.sobre {
+    color: white;
+    background-color: gold;
+    border-radius: 30px;
+}
+
+.inicio {
+    background-color: rgb(12, 12, 53);
+    padding: 20px;
+}
+
+.cartoes-classes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.python {
+    background-color: darkblue;
+    color: gold;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: rgb(7, 7, 46);
+    color: white;
+}
