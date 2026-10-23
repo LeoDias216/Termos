@@ -44,7 +44,7 @@ button {
 }
 
 main section {
-    padding: 100px max(6.25%, calc((100% - 1260px) / 2));
+    padding: 100px 6.25%
 }
 
 .texto_simples {

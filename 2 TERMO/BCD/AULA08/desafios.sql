@@ -186,3 +186,69 @@ DELETE FROM categoria
 WHERE id_categoria = 10
 
 SELECT * FROM categoria
+
+-- 17. Tente inserir um produto com id_categoria = 9999.
+-- Qual restrição impediu a operação?
+
+INSERT INTO PRODUTO (nome,preco,ativo,id_categoria) VALUES ('Bolo de chocolate', '15.00', TRUE, 9999);
+-- R: Cannot add or update a child row: a foreign key constraint fails
+-- Uma chave estrangeira impediu a ação
+
+
+-- 18. Tente cadastrar um cliente usando 'ana@email.com'.
+-- Qual restrição impediu a operação?
+
+INSERT INTO cliente (nome,email,telefone,cidade,ativo) VALUES
+('Ana','ana@email.com','19999999967','Valinhos',TRUE)
+-- R: Nenhuma restrição impediu
+
+
+-- 19. Tente criar um pedido com id_cliente = 9999.
+-- Qual restrição impediu a operação?
+
+INSERT INTO pedido (data_pedido, status_pedido, valor_total, id_cliente) VALUES
+(NOW(),'ABERTO',0.00,9999)
+-- R: Cannot add or update a child row: a foreign key constraint fails
+-- Novamente, uma chave estrangeira impediu a ação
+
+
+-- 20. Escreva em comentários a diferença entre os três erros anteriores.
+
+-- Os erros acionam foreign keys diferentes, mas todos são restringidos por uma foreign key.
+
+
+-- PARTE E - DESAFIO COMPLETO COM TRANSAÇÃO
+
+-- 21. Inicie uma transação.
+
+START TRANSACTION;
+
+-- 22. Dentro dela, cadastre um cliente, um pedido e dois itens relacionados.
+
+INSERT INTO cliente (nome,email,telefone,cidade,ativo) VALUES
+('Albert Wesker','albert.wesker@email.com','19999999090','Raccoon City',TRUE)
+
+INSERT INTO pedido (data_pedido, status_pedido, valor_total, id_cliente) VALUES
+(NOW(),'ABERTO',0.00,23)
+
+INSERT INTO item_pedido (id_pedido,id_produto,quantidade,preco_unitario,observacao) VALUES
+(12,4,1,'5.00','Nenhuma observação'),
+(12,7,1,'12.00','Preferências em Maracujá e Manga');
+
+
+-- 23. Faça uma consulta com JOIN comprovando que os registros existem
+--     enquanto a transação está aberta.
+
+
+-- 24. Execute ROLLBACK e depois use SELECT para provar que o cadastro foi desfeito.
+
+
+-- 25. Repita o processo com novos dados e finalize usando COMMIT.
+--     Depois consulte os registros persistidos.
+
+
+-- DESAFIO EXTRA
+-- 26. Escolha uma situação realista do SmartCoffee que exija INSERT + UPDATE
+--     ou UPDATE + DELETE lógico. Descreva a regra de negócio e implemente.
+
+SELECT * FROM CLIENTE;
