@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,11 @@ html, body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
 }
 
 header {
@@ -28,7 +34,6 @@ header {
     top: -40px;
     width: 220px;
     height: 220px;
-    
 }
 
 span {
@@ -59,7 +64,7 @@ nav a {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     color: white;
-}    
+}
 
 .pagina_atual {
     color: blueviolet;
@@ -68,154 +73,120 @@ nav a {
     padding-bottom: 5px;
 }
 
-
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-
     font-family: "Roboto", sans-serif;
-    color: #292929;
+    color: #292333;
 }
 
 main {
     width: 100%;
 }
 
-
-
-
 .explorar-intro {
-    background-color: rgb(253, 215, 180);
-
+    background-color: #F5F1F8;
     text-align: center;
     padding: 65px 20px 70px;
 }
 
 .explorar-intro h2 {
     margin: 0 0 15px;
-
     font-family: "Racing Sans One", sans-serif;
     font-size: 42px;
     font-weight: normal;
-
-    color: orangered;
+    color: #7028A0;
 }
 
 .explorar-intro p {
     max-width: 600px;
     margin: 0 auto 30px;
-
+    color: #51485C;
     font-size: 16px;
     line-height: 1.7;
 }
 
-
-
 .barra-pesquisa {
     display: flex;
     align-items: center;
-
     max-width: 600px;
     margin: 0 auto;
-
-    background-color: white;
-    border: 2px solid blueviolet;
+    background-color: #FFFFFF;
+    border: 2px solid #7028A0;
     border-radius: 30px;
-
     padding: 5px;
+    box-shadow: 0 4px 12px rgba(65, 35, 85, 0.07);
 }
 
 .barra-pesquisa input {
     flex: 1;
     min-width: 0;
-
     border: none;
     outline: none;
     background: transparent;
-
     padding: 12px 18px;
+    color: #292333;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #81768B;
 }
 
 .barra-pesquisa button {
     border: none;
     border-radius: 25px;
-
-    background-color: blueviolet;
-    color: white;
-
+    background-color: #7028A0;
+    color: #FFFFFF;
     padding: 12px 22px;
-
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .barra-pesquisa button:hover {
-    background-color: orangered;
+    background-color: #FF8C00;
 }
-
-
 
 .categorias {
     padding: 55px 8%;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .categorias > h2,
 .catalogo-cursos > h2 {
     margin: 0 0 15px;
-
     font-family: "Racing Sans One", sans-serif;
     font-size: 32px;
     font-weight: normal;
+    color: #7028A0;
 }
 
 .lista-categorias {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-
     max-width: 1100px;
     margin: 35px auto 0;
 }
 
 .categoria {
     display: block;
-
     padding: 30px 20px;
-
-    background-color: white;
-    border: 1px solid #eeeeee;
+    background-color: #F5F1F8;
+    border: 1px solid #E8DDF0;
     border-radius: 15px;
-
-    color: #292929;
+    color: #292333;
     text-decoration: none;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(65, 35, 85, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .categoria:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #7028A0;
+    box-shadow: 0 8px 20px rgba(65, 35, 85, 0.12);
 }
 
 .categoria-icone {
@@ -226,21 +197,20 @@ main {
 
 .categoria h3 {
     margin: 0 0 10px;
-    color: blueviolet;
+    color: #7028A0;
     font-size: 20px;
 }
 
 .categoria p {
     margin: 0;
+    color: #62596B;
     font-size: 14px;
-    color: #666666;
+    line-height: 1.6;
 }
 
-
-
 .catalogo-cursos {
-    padding: 55px 8%;
-    background-color: #f7f7f7;
+    padding: 60px 8%;
+    background-color: #F5F1F8;
 }
 
 .catalogo-cursos > h2,
@@ -250,8 +220,8 @@ main {
 
 .subtitulo-catalogo {
     margin: 0 0 45px;
-    color: #666666;
-    line-height: 1.6;
+    color: #62596B;
+    line-height: 1.7;
 }
 
 .grupo-cursos {
@@ -266,50 +236,39 @@ main {
 
 .titulo-categoria {
     margin: 0 0 25px;
-    padding-left: 15px;
-
-    border-left: 5px solid darkorange;
-
-    color: blueviolet;
+    padding: 5px 0 5px 15px;
+    border-left: 5px solid #FF8C00;
+    color: #7028A0;
     font-size: 24px;
 }
 
 .lista-cursos {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
-
-
 
 .curso-card {
     display: flex;
     flex-direction: column;
-
     min-width: 0;
     overflow: hidden;
-
-    background-color: white;
+    background-color: #FFFFFF;
+    border: 1px solid #E8DDF0;
     border-radius: 15px;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(65, 35, 85, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .curso-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 8px 20px rgba(65, 35, 85, 0.13);
 }
 
 .curso-card > img {
     display: block;
-
     width: 100%;
-    height: 190px;
-
+    height: 210px;
     object-fit: cover;
 }
 
@@ -317,94 +276,81 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     flex: 1;
-    padding: 22px;
+    padding: 24px;
 }
 
 .curso-area {
     display: inline-block;
-
     margin-bottom: 12px;
     padding: 6px 12px;
-
     border-radius: 20px;
-    background-color: #f0e3ff;
-
-    color: blueviolet;
+    background-color: #E8DDF0;
+    color: #7028A0;
     font-size: 12px;
     font-weight: bold;
 }
 
 .curso-conteudo h4 {
     margin: 0 0 12px;
+    color: #292333;
     font-size: 19px;
+    line-height: 1.4;
 }
 
 .curso-conteudo > p {
     margin: 0 0 20px;
-
-    color: #666666;
+    color: #62596B;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .curso-info {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
     margin-top: auto;
     margin-bottom: 20px;
-
-    color: #666666;
+    color: #51485C;
     font-size: 12px;
 }
 
 .curso-info span {
     padding: 6px 10px;
-
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    background-color: #F5F1F8;
+    border: 1px solid #E8DDF0;
+    border-radius: 6px;
 }
-
-
 
 .botao-curso {
     display: block;
     width: 100%;
-
     padding: 12px;
+    border: 2px solid #7028A0;
     border-radius: 8px;
-
-    background-color: blueviolet;
-    color: white;
-
+    background-color: #7028A0;
+    color: #FFFFFF;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .botao-curso:hover {
-    background-color: orangered;
+    background-color: #FF8C00;
+    border-color: #FF8C00;
 }
-
-
 
 .convite-cursos {
     padding: 55px 20px;
-
-    background-color: rgb(253, 215, 180);
+    background-color: #E8DDF0;
     text-align: center;
 }
 
 .convite-cursos h2 {
     margin: 0 0 15px;
-
-    color: orangered;
+    color: #7028A0;
     font-family: "Racing Sans One", sans-serif;
     font-size: 30px;
     font-weight: normal;
@@ -413,59 +359,108 @@ main {
 .convite-cursos p {
     max-width: 600px;
     margin: 0 auto 25px;
-
+    color: #51485C;
     line-height: 1.7;
 }
 
 .botao-convite {
     display: inline-block;
-
     padding: 13px 25px;
     border-radius: 25px;
-
-    background-color: blueviolet;
-    color: white;
-
+    background-color: #7028A0;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-
     transition: background-color 0.3s;
 }
 
 .botao-convite:hover {
-    background-color: orangered;
+    background-color: #FF8C00;
 }
-
-
 
 .voltar-topo {
     position: fixed;
     right: 20px;
     bottom: 20px;
     z-index: 10;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 45px;
     height: 45px;
-
     border-radius: 50%;
-    background-color: blueviolet;
-    color: white;
-
+    background-color: #7028A0;
+    color: #FFFFFF;
     font-size: 25px;
     text-decoration: none;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
 }
 
 .voltar-topo:hover {
-    background-color: orangered;
+    background-color: #FF8C00;
 }
 
+footer {
+    background-color: #252525;
+    color: white;
+    padding: 40px 80px 20px;
+    font-family: "Roboto", sans-serif;
+}
 
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.footer-logo p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 30px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: blueviolet;
+}
+
+.footer-final {
+    border-top: 1px solid #555;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-final p {
+    margin: 0;
+    font-size: 12px;
+}
 
 @media (max-width: 1000px) {
     .lista-cursos {
@@ -530,92 +525,6 @@ main {
     }
 }
 
-footer {
-    background-color: #252525;
-    color: white;
-
-    padding: 40px 80px 20px;
-
-    font-family: "Roboto", sans-serif;
-}
-
-
-.footer-logo {
-    text-align: center;
-}
-
-.footer-logo h2 {
-    margin: 0;
-    font-size: 35px;
-}
-
-.footer-logo p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-
-    gap: 120px;
-
-    margin-top: 30px;
-}
-
-.footer-links div {
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-.footer-links h3 {
-    margin: 0 0 8px;
-
-    font-size: 16px;
-}
-
-.footer-links a {
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 13px;
-}
-
-.footer-links a:hover {
-    color: blueviolet;
-}
-
-
-
-.footer-final {
-    border-top: 1px solid #555;
-
-    margin-top: 30px;
-    padding-top: 15px;
-
-    text-align: center;
-}
-
-.footer-final p {
-    margin: 0;
-
-    font-size: 12px;
-}
-
-
-/* ADAPTAÇÃO PARA TELAS MENORES */
-
-@media (max-width: 800px) {
-    .lista-cursos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 550px) {
     .lista-cursos {
         grid-template-columns: 1fr;
@@ -627,5 +536,13 @@ footer {
 
     .catalogo-cursos {
         padding: 35px 20px;
+    }
+
+    .curso-conteudo {
+        padding: 20px;
+    }
+
+    .curso-card > img {
+        height: 190px;
     }
 }
