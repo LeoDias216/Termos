@@ -1,0 +1,29 @@
+main {
+    background-color: black;
+}
+
+.inicio {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
+
+.meio {
+    color: red;
+}
+
+.meio2 {
+    color: yellow;
+}
+
+.meio3 {
+    color: aqua;
+}
+
+.fim {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
