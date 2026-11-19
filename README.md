@@ -1,19 +1,18 @@
 # Termos
 
-Repositório acadêmico com exercícios, projetos e materiais de estudo do 1º e 2º termo, reunindo conteúdos de lógica de programação, Python, JavaScript, HTML, CSS, SQL, banco de dados e desenvolvimento web.
+Repositório acadêmico com exercícios, projetos e materiais desenvolvidos durante o 1º e o 2º termo do curso. O conteúdo reúne lógica de programação, Python, JavaScript, Node.js, HTML, CSS, SQL, modelagem de dados e projetos práticos.
 
 ## Descrição do projeto
 
-Este repositório reúne as atividades desenvolvidas ao longo do curso em diferentes áreas de programação e tecnologia. O material inclui exercícios introdutórios, projetos práticos, interfaces gráficas, páginas web, scripts SQL e desafios de lógica.
+Este projeto funciona como registro das atividades realizadas em sala e das práticas complementares de desenvolvimento. Ao longo do material são trabalhados:
 
-O objetivo do projeto é registrar o progresso dos estudos em:
-
-- lógica de programação;
-- Python e estruturas de controle;
-- JavaScript e Node.js;
-- HTML e CSS;
-- banco de dados e SQL;
-- projetos e atividades práticas em sala.
+- fundamentos e estruturas da linguagem Python;
+- lógica de programação e JavaScript no ambiente Node.js;
+- interfaces gráficas com Tkinter;
+- criação de páginas e layouts com HTML e CSS;
+- módulos, arquivos JSON, tratamento de erros e programação orientada a objetos;
+- criação de bancos de dados, consultas SQL e modelagem conceitual/lógica;
+- exercícios, somativas, recuperativas e projetos integrados.
 
 ## Tecnologias utilizadas
 
@@ -21,9 +20,11 @@ O objetivo do projeto é registrar o progresso dos estudos em:
 - JavaScript
 - Node.js
 - npm
+- pacote `readline-sync`
 - HTML5
 - CSS3
-- SQL / MySQL
+- SQL
+- MySQL
 - BrModelo
 - Tkinter
 - Git e GitHub
@@ -33,37 +34,11 @@ O objetivo do projeto é registrar o progresso dos estudos em:
 
 ```text
 Termos/
-├── .git/
-├── .gitignore
-├── README.md
-├── Texto do readme
 ├── 1 TERMO/
 │   ├── ATIVIDADES/
-│   │   ├── ATIVIDADE SOMATIVA.py
-│   │   ├── ATIVIDADE SOMATIVA2.py
-│   │   ├── Clean Code.py
-│   │   ├── LISTA 1.py
-│   │   └── Lista3.py
-│   ├── Aula2/
-│   ├── Aula3/
-│   ├── Aula5/
-│   ├── Aula6/
-│   ├── Aula7/
-│   ├── Aula8/
-│   ├── Aula9/
-│   ├── Aula10/
-│   ├── Aula11/
-│   ├── Aula12/
+│   ├── Aula2/ até Aula12/
 │   ├── Comandos/
-│   ├── Comandos.zip
 │   └── Projetos/
-│       ├── apresentacaojogo.py
-│       ├── brigada.py
-│       ├── brigadainterface.py
-│       ├── cancelas.py
-│       ├── elevador.py
-│       ├── interface jogo.py
-│       └── Imagens/
 ├── 2 TERMO/
 │   ├── Backend/
 │   │   ├── Aula1/
@@ -76,305 +51,238 @@ Termos/
 │   │   ├── Laços/
 │   │   └── SOMATIVAS/
 │   ├── BCD/
-│   │   ├── AULA06/
-│   │   ├── AULA07/
-│   │   ├── AULA08/
-│   │   ├── AULA09/
+│   │   ├── AULA06/ até AULA12/
 │   │   ├── BrModelo/
 │   │   ├── MySql/
-│   │   └── SmartCoffee/
+│   │   ├── Projetos/
+│   │   ├── Recuperativas/
+│   │   ├── SmartCoffee/
+│   │   └── Somativas/
 │   ├── Desafios/
 │   ├── LIMA/
-│   │   ├── AULA_1/
-│   │   ├── AULA_2/
-│   │   ├── AULA_4/
-│   │   ├── AULA_5/
-│   │   ├── AULA_6/
-│   │   ├── AULA_7/
-│   │   ├── AULA_9_Smartcoffee/
+│   │   ├── AULA_1/ até AULA_14/
 │   │   ├── Projeto/
+│   │   ├── Recuperativas/
 │   │   ├── SmartCoffee_site/
 │   │   └── Somativas/
 │   ├── package.json
-│   ├── package-lock.json
-│   └── node_modules/
-├── Projeto 1 - Site/
-│   └── Sprint 1/
-├── 1 TERMO.zip
-├── 2 TERMO.zip
-└── .vscode/
+│   └── package-lock.json
+├── README.md
+└── Texto do readme
 ```
 
 ## Resumo dos exercícios por aula
 
-### 1º termo - Python
+### 1º termo
 
 #### Aula 2
-Arquivo principal: `1 TERMO/Aula2/segundo.py`
-
-- tipos numéricos e textos;
-- operações matemáticas;
-- entradas via `input()`;
-- cálculos básicos e IMC;
-- exercícios de variáveis e concatenação.
+O arquivo [segundo.py](./1%20TERMO/Aula2/segundo.py) apresenta tipos de dados, operações aritméticas, entrada de dados com `input()`, concatenação, área de figuras, calculadora, cálculo de IMC e criação de crachá.
 
 #### Aula 3
-Arquivo principal: `1 TERMO/Aula3/terceiro.py`
-
-- condicionais com `if`, `elif` e `else`;
-- comparação de valores;
-- cálculo de descontos e gorjetas;
-- programas com decisões e classificação.
+O arquivo [terceiro.py](./1%20TERMO/Aula3/terceiro.py) trabalha decisões com `if`, `elif` e `else`, maioridade, menu de loja, categorias, calculadora, idade, gorjetas, antecessor e sucessor e descontos.
 
 #### Aula 5
-Arquivo principal: `1 TERMO/Aula5/quinto.py`
-
-- laços `for` e `while`;
-- listas e repetição;
-- tabuada e menu interativo;
-- manipulação de dados em sequência.
+O arquivo [quinto.py](./1%20TERMO/Aula5/quinto.py) aborda estruturas de repetição `for` e `while`, contagem de produção, listas de itens, tabuadas, monitoramento de pressão, menus e Pokémon inicial.
 
 #### Aula 6
-Arquivo principal: `1 TERMO/Aula6/sexto.py`
-
-- criação e uso de funções;
-- parâmetros e retorno;
-- leitura de dados e lógica procedural;
-- reutilização de código.
+O arquivo [sexto.py](./1%20TERMO/Aula6/sexto.py) reúne exercícios com funções e reutilização de lógica em Python.
 
 #### Aula 7
-Arquivo principal: `1 TERMO/Aula7/setimo.py`
-
-- revisão de conceitos;
-- cálculos de veículos e autonomia;
-- operações com valores e médias;
-- exercícios financeiros e de lógica.
+O arquivo [setimo.py](./1%20TERMO/Aula7/setimo.py) contém exercícios de revisão de cálculos, médias e lógica procedural.
 
 #### Aula 8
-Arquivo principal: `1 TERMO/Aula8/oitavo.py`
-
-- strings e manipulação de texto;
-- leitura e gravação de arquivos;
-- uso de módulos do sistema;
-- automação básica de arquivos.
+O arquivo [oitavo.py](./1%20TERMO/Aula8/oitavo.py) apresenta manipulação de strings, escrita e leitura de arquivos, uso do módulo `os`, criação e exclusão de diretórios e práticas de Clean Code.
 
 #### Aula 9
-Arquivo principal: `1 TERMO/Aula9/Projeto.py`
-
-- simulação de estacionamento;
-- vagas, tickets, TAG e tarifas;
-- regras de desconto e sistema de cobrança.
+O arquivo [Projeto.py](./1%20TERMO/Aula9/Projeto.py) registra os requisitos funcionais e não funcionais de um sistema de estacionamento para 500 vagas, com tickets, TAG, vagas reservadas, tarifas, pagamentos e controle da cancela.
 
 #### Aula 10
-Arquivo principal: `1 TERMO/Aula10/decimo.py`
-
-- funções em Python;
-- parâmetros e retorno;
-- reutilização de código e interação com usuário.
+O arquivo [decimo.py](./1%20TERMO/Aula10/decimo.py) aprofunda criação e chamada de funções em Python.
 
 #### Aula 11
-Arquivos: `1 TERMO/Aula11/onze.py` e `1 TERMO/Aula11/onze2.py`
-
-- introdução ao Tkinter;
-- janela, botões e labels;
-- cadastro e login em interface gráfica.
+Os arquivos [onze.py](./1%20TERMO/Aula11/onze.py) e [onze2.py](./1%20TERMO/Aula11/onze2.py) introduzem interfaces gráficas com Tkinter, incluindo janelas, botões, rótulos e telas de cadastro ou login.
 
 #### Aula 12
-Arquivo principal: `1 TERMO/Aula12/doze.py`
+O arquivo [doze.py](./1%20TERMO/Aula12/doze.py) continua os exercícios de interface gráfica e interação com widgets.
 
-- continuidade de GUI com Tkinter;
-- uso de widgets e interações visuais;
-- cadastros com dados pessoais.
+#### Atividades
+A pasta [ATIVIDADES](./1%20TERMO/ATIVIDADES/) contém listas, atividades somativas, exercícios de revisão e práticas de Clean Code.
 
-#### Atividades e listas
-Pasta: `1 TERMO/ATIVIDADES/`
+#### Projetos
+A pasta [Projetos](./1%20TERMO/Projetos/) reúne projetos em Python relacionados a interfaces, jogos, sistemas de cancela, elevador e brigada.
 
-- `ATIVIDADE SOMATIVA.py`
-- `ATIVIDADE SOMATIVA2.py`
-- `LISTA 1.py`
-- `Lista3.py`
-- `Clean Code.py`
+### 2º termo - Backend
 
-Esses arquivos consolidam exercícios de avaliação, lógica e organização de código.
+#### Aula 1
+Trabalha entradas no terminal, operadores lógicos, menus e condicionais em JavaScript. Os exercícios incluem análise de crédito, contador, padaria e tabuada.
 
-#### Projetos em Python
-Pasta: `1 TERMO/Projetos/`
+#### Aula 2
+Apresenta funções JavaScript, parâmetros, retorno, cálculo de médias e os desafios das funções `ds1.js` a `ds4.js`.
 
-- `brigada.py` e `brigadainterface.py`
-- `cancelas.py`
-- `elevador.py`
-- `apresentacaojogo.py`
-- `interface jogo.py`
+#### Aula 3 - sistemas
+Utiliza módulos e `require()` para organizar um sistema de oficina. Os exemplos calculam orçamentos, garantias, descontos, logística e frete.
 
-São projetos que exploram interfaces, automação, simulação e jogos.
+#### Aula 4 - tratamento de erros
+Introduz `try/catch`, validação de dados e tratamento de erros em um simulador de balança.
 
-### 2º termo - JavaScript, HTML e banco de dados
+#### Aula 5
+Trabalha leitura e escrita de arquivos JSON e manipulação de dados de estoque e manutenção de máquinas.
 
-#### Backend / Aula 1
-Pasta: `2 TERMO/Backend/Aula1/`
+#### Aula 6 - desafios
+Divide exercícios em módulos independentes: conversor de moedas, geometria, sensores, cálculos de vendas, peças defeituosas e cadastro de visitantes.
 
-- `contador.js`
-- `padaria.js`
-- `tabuada.js`
-- `Aula1.js`
+#### Fundamentos de POO
+Apresenta classes, atributos, construtores, métodos e objetos em JavaScript.
 
-Conteúdo focado em entradas no terminal, menu interativo e lógica de programação em JavaScript.
+#### Laços
+Contém exercícios com arrays e estruturas de repetição para percorrer listas e calcular dados.
 
-#### Backend / Aula 2
-Pasta: `2 TERMO/Backend/Aula2/`
+#### Somativas
+Reúne dez exercícios avaliativos de produção, compras, qualidade, temperatura, ciclos, média, operadores, estoque, eficiência e manutenção.
 
-- funções matemáticas;
-- exercícios de objetos e cálculos;
-- desafios de lógica e operações em JavaScript.
+#### Desafios
+A pasta [Desafios](./2%20TERMO/Desafios/) contém cinco desafios iniciais em JavaScript, um exercício de contagem e desafios adicionais em Python e HTML.
 
-#### Backend / Laços
-Pasta: `2 TERMO/Backend/Laços/`
+### 2º termo - Banco de Dados e SQL
 
-- arrays;
-- laços de repetição;
-- cálculo de médias;
-- manipulação de listas e condicionais.
+#### Aulas 6 a 12
+Os scripts da pasta [BCD](./2%20TERMO/BCD/) abrangem:
 
-#### Backend / Aula 3 e sistemas
-Pasta: `2 TERMO/Backend/Aula3_sistemas/`
+- Aula 6: modelagem e scripts de banco de dados;
+- Aula 7: relacionamentos, cardinalidades e modelos conceituais/lógicos;
+- Aula 8: criação de tabelas, DML, inserções, consultas, atualizações, exclusões e transações;
+- Aula 9: DQL, filtros, `DISTINCT`, `WHERE`, `BETWEEN`, `IN`, `LIKE`, funções, agregações, `GROUP BY`, `HAVING`, `JOIN`, `CASE` e subconsultas;
+- Aula 10: transações com `COMMIT`, `ROLLBACK`, `SAVEPOINT`, integridade referencial e regras `ON DELETE`/`ON UPDATE`;
+- Aula 11: normalização das formas normais, identificação de redundâncias, dependências, indexação e `EXPLAIN`;
+- Aula 12: revisão integrada dos conceitos de banco de dados.
 
-- estudos de sistemas e oficina;
-- orçamento, logística, frete e seguro;
-- organização de dados e lógica de negócio.
+As pastas `BrModelo`, `MySql`, `SmartCoffee`, `Somativas` e `Recuperativas` guardam diagramas, documentação, scripts de bibliotecas, clínicas, oficinas e projetos próprios.
 
-#### BCD / Banco de dados
-Pasta: `2 TERMO/BCD/`
+### 2º termo - LIMA
 
-- scripts SQL;
-- diagramas em BrModelo;
-- atividades com DML, DDL e modelagem de dados;
-- estrutura de sistemas e entidades relacionais.
+#### Aulas 1 a 14
+A pasta [LIMA](./2%20TERMO/LIMA/) reúne exercícios progressivos de HTML e CSS:
 
-#### LIMA / HTML e CSS
-Pasta: `2 TERMO/LIMA/`
+- Aula 1: introdução ao HTML, títulos, parágrafos, links e CSS inline;
+- Aula 2: links internos e externos e página de equipe;
+- Aula 4: estrutura e primeiras páginas de layout;
+- Aula 5: currículo, blog e exercícios de estilo;
+- Aula 6: CSS interno, inline e externo, além de listas e revisão;
+- Aula 7: exercícios de correção de layout;
+- Aula 9: projeto inicial do SmartCoffee;
+- Aula 10: seletores, listas e exercícios de estilos;
+- Aula 11: CSS Grid;
+- Aula 12: continuação de layouts e grids;
+- Aula 13: divisão de layouts em partes;
+- Aula 14: revisão de Flexbox, Grid, imagens, cards e versionamento com Git/GitHub.
 
-- aulas de HTML e CSS;
-- páginas institucionais e exercícios de estrutura visual;
-- projetos e materiais de SmartCoffee;
-- atividade de layout e design.
+As pastas `Projeto`, `SmartCoffee_site`, `Somativas` e `Recuperativas` apresentam páginas completas e atividades avaliativas.
 
-#### Projeto SmartCoffee
-Pasta: `2 TERMO/LIMA/Projeto/`
+## Executar os arquivos JavaScript com Node.js
 
-- páginas de navegação e produtos;
-- gestão de pedidos, clientes e estoque;
-- estrutura de um sistema de cafeteria em HTML.
+Pré-requisitos:
 
-#### Projeto 1 - Site
-Pasta: `Projeto 1 - Site/Sprint 1/`
+- Node.js instalado;
+- npm instalado;
+- o pacote `readline-sync` instalado na pasta `2 TERMO`.
 
-- páginas de apresentação, curso, contato e calendário;
-- layout de site institucional;
-- arquivos de estilo e imagens.
+Verifique a instalação:
 
-## Como executar os arquivos com Node.js
-
-1. Verifique se o Node.js está instalado:
-
-```bash
-node -v
-npm -v
+```powershell
+node --version
+npm --version
 ```
 
-2. Abra o terminal na pasta raiz do projeto:
+Instale as dependências:
 
-```bash
+```powershell
 cd "2 TERMO"
-```
-
-3. Instale as dependências do projeto:
-
-```bash
 npm install
 ```
 
-4. Execute um arquivo JavaScript com o comando `node`:
+Execute um arquivo a partir da pasta `2 TERMO`:
 
-```bash
+```powershell
 node Backend/Aula1/contador.js
 node Backend/Aula1/padaria.js
-node Backend/Aula1/tabuada.js
 node Backend/Aula2/funcoes.js/ex1.js
+node Backend/Aula3_sistemas/oficina/app.js
+node Backend/Aula4_tratamento_erros/appBalanca.js
 node Backend/Laços/array.js
 node Desafios/Desafio1.js
-node Desafios/Desafio_contagem.js
+node "Backend/Aula6_desafios/Atividade 1/app.js"
 ```
 
-> Arquivos que usam `readline-sync` pedem entrada pelo terminal. Em ambiente Windows, também é possível executar diretamente pelo PowerShell ou CMD.
+Programas que usam `readline-sync` aguardam respostas digitadas no terminal.
 
-## Como executar arquivos Python
+## Executar os arquivos Python
 
-```bash
+Execute pelo terminal na raiz do projeto:
+
+```powershell
 python "1 TERMO/Aula2/segundo.py"
+python "1 TERMO/Aula5/quinto.py"
 python "1 TERMO/ATIVIDADES/ATIVIDADE SOMATIVA.py"
 python "1 TERMO/Projetos/brigada.py"
 ```
 
-Se o script usar Tkinter, a máquina precisa ter suporte a interface gráfica.
+Os scripts com Tkinter precisam de suporte a interfaces gráficas no ambiente Python.
 
-## Como abrir arquivos HTML
+## Executar páginas HTML
 
-Os arquivos HTML podem ser abertos diretamente no navegador, ou servidos localmente com Python:
+Abra um arquivo `.html` diretamente no navegador ou use o servidor HTTP do Python:
 
-```bash
-cd "2 TERMO/LIMA/Projeto"
+```powershell
+cd "2 TERMO/LIMA"
 python -m http.server 8000
 ```
 
-Depois, acesse:
-
-```text
-http://localhost:8000
-```
+Depois, acesse `http://localhost:8000` no navegador.
 
 ## Instruções de Git
 
-### Clonar o repositório
-
-```bash
-git clone <URL_DO_REPOSITORIO>
-cd Termos
-```
-
 ### Verificar alterações
 
-```bash
+```powershell
 git status
 ```
 
-### Adicionar arquivos ao controle de versão
+### Registrar alterações
 
-```bash
+```powershell
 git add .
+git commit -m "Atualiza arquivos do curso"
 ```
 
-### Registrar uma alteração
+### Enviar para o GitHub
 
-```bash
-git commit -m "Atualiza documentação do projeto"
-```
-
-### Enviar alterações para o GitHub
-
-```bash
+```powershell
 git push origin main
 ```
 
-### Criar uma branch
+Para enviar pela primeira vez uma nova branch:
 
-```bash
+```powershell
 git switch -c nome-da-branch
 git push -u origin nome-da-branch
 ```
 
-### Ver histórico de commits
+### Atualizar o repositório local
 
-```bash
+```powershell
+git pull
+```
+
+### Clonar o repositório
+
+```powershell
+git clone <URL_DO_REPOSITORIO>
+cd Termos
+```
+
+### Consultar o histórico
+
+```powershell
 git log --oneline
 ```
 
